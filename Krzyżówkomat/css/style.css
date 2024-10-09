@@ -11193,6 +11193,14 @@ body {
     align-items: center;
 }
 
+
+#previewImage {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 .upload-box {
     border: 2px dashed #aaa;
     border-radius: 10px;
@@ -11304,4 +11312,41 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
     z-index: 999;
+}
+
+.zoomed-image {
+    display: none; /* Ukryte, dopóki nie powiększymy */
+    text-align: center;
+}
+
+.rotation-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    padding: 0 10px;
+}
+
+.rotate-left, .rotate-right {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.rotate-left {
+    position: absolute;
+    left: 10px; /* Umieszczamy przycisk po lewej stronie */
+}
+
+.rotate-right {
+    position: absolute;
+    right: 10px; /* Umieszczamy przycisk po prawej stronie */
 }
