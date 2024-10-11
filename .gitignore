@@ -1,3 +1,4 @@
+*.code-workspace
 .data/
 venv/
 .env
